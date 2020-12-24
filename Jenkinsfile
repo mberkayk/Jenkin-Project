@@ -5,7 +5,7 @@ pipeline {
 	stages {
 		stage ('build packer'){
 			steps {
-				sh 'packer build --force ./box-config.json'
+				sh 'packer build -v --force ./box-config.json'
 			}
 		}
 	}
