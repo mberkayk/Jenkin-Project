@@ -1,0 +1,12 @@
+{
+	"builders": [
+
+		{
+      "communicator": "ssh",
+      "source_path": "generic/centos8",
+      "provider": "virtualbox",
+      "type": "vagrant",
+      "template":"vagrant-template"
+    }
+	]
+}
