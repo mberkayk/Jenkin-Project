@@ -3,8 +3,10 @@ pipeline {
 	agent any
 
 	stages {
-		steps {
-			sh 'packer build --force ./box-config.json'
+		stage ('build packer'){
+			steps {
+				sh 'packer build --force ./box-config.json'
+			}
 		}
 	}
 	
