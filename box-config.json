@@ -1,7 +1,7 @@
 {
 	"builders": [
 
-	{
+		{
 	      "type": "qemu",
 	      "iso_url": "./CentOS-8.3.2011-x86_64-boot",
 	      "iso_checksum": "sha256:2b801bc5801816d0cf27fc74552cf058951c42c7b72b1fe313429b1070c3876c",
@@ -21,5 +21,6 @@
 	      "boot_command": [
 	        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos6-ks.cfg<enter><wait>"
 	      ]
-	    }
+		}
+	]
 }
