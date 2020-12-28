@@ -19,7 +19,7 @@
 	      "disk_interface": "virtio",
 	      "boot_wait": "10s",
 	      "boot_command": [
-	        "<tab> text ks=./ks.cfg<enter><wait>"
+	        "<tab> text ks=https://raw.githubusercontent.com/mberkayk/Jenkins-Project/main/ks.cfg<enter><wait>"
 	      ]
 		}
 	]
