@@ -16,7 +16,7 @@ pipeline {
 			steps{
 				s3Upload(profileName:"aws-profile",
 									bucket:jenkins-bucket ,
-									sourceFile:)
+									sourceFile:deneme.txt)
 			}
 			
 		}
