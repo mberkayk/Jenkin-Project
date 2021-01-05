@@ -10,22 +10,19 @@ pipeline {
 		}
 	}
 
-	post {
-		always{
-
-			steps{
-				s3Upload(profileName:"aws-profile",
-								 entries: [
-									bucket:jenkins-bucket ,
-									sourceFile:deneme.txt],
-									consoleLogLevel: "INFO",
-									dontWaitForConcurrentBuildCompletion: false,
-									dontSetBuildResultOnFailure: false,
-									pluginFailureResultConstraint: "",
-									userMetadata: [])
-			}
-			
-		}
-	}
+	# post {
+		# always{
+			# s3Upload(profileName:"aws-profile",
+							 # entries: [
+								# bucket:jenkins-bucket ,
+								# sourceFile:deneme.txt],
+								# consoleLogLevel: "INFO",
+								# dontWaitForConcurrentBuildCompletion: false,
+								# dontSetBuildResultOnFailure: false,
+								# pluginFailureResultConstraint: "",
+								# userMetadata: [])
+		# }
+			# 
+	# }
 	
 }
