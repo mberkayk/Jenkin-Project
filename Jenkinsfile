@@ -15,7 +15,6 @@ pipeline {
 													dontSetBuildResultOnFailure: false,
 													pluginFailureResultConstraint: "",
 													userMetadata: [])
-							}
 			}
 		}
 	}	
