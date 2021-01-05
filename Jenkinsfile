@@ -17,7 +17,12 @@ pipeline {
 				s3Upload(profileName:"aws-profile",
 								 entries: [
 									bucket:jenkins-bucket ,
-									sourceFile:deneme.txt])
+									sourceFile:deneme.txt],
+									consoleLogLevel: "INFO",
+									dontWaitForConcurrentBuildCompletion: false,
+									dontSetBuildResultOnFailure: false,
+									pluginFailureResultConstraint: "",
+									userMetadata: [])
 			}
 			
 		}
